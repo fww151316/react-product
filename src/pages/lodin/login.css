@@ -1,0 +1,26 @@
+.Login{
+    height: 100%;
+    background: url("./images/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.Login-header{
+    height: 80px;
+    background-color: black;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 80px;
+    padding-left: 20px;
+}
+.Login-conten{
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+#basic{
+    width: 90%;
+    padding-top: 40px;
+}

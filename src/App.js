@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, {Fragment}from 'react';
+import 'antd/dist/antd.css';
+import { Switch, Route,BrowserRouter } from 'react-router-dom';
+import Login from './pages/lodin/login';
+import Admin from './pages/admin/admin';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <BrowserRouter>
+        <Switch>
+           <Route path='/' component={Admin} />
+          <Route exact path='/login' component={Login} />
+         
+        </Switch>
+      </BrowserRouter>
+      </Fragment>
   );
 }
 
